@@ -30,7 +30,13 @@ $ git config --list
 $ git config user.name
 ```
 
-### set pull strategy
+### IMPORTANT: set pull strategy 
+```bash
+$ git config pull.ff only 
+
+$ # to set globally
+$ git config --global pull.ff only
+```
 ```bash
 $ hint: Pulling without specifying how to reconcile divergent branches is
 $ hint: discouraged. You can squelch this message by running one of the following
@@ -46,10 +52,6 @@ $ hint: or --ff-only on the command line to override the configured default per
 $ hint: invocation.
 ```
 
-```bash
-$ git config pull.ff only 
-$ git config --global pull.ff only
-```
  
 
 ### Optional: Install bash completion
