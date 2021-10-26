@@ -11,10 +11,11 @@
 | No      | Git Module |
 | ----------- | ----------- |
 | 1      | Git Setup      |
-| 2   |  Basic git workflow        |
+| 2   |  Basic git         |
 | 3   |  Commit      |
 | 4   |  Branching       |
-| 4   |  Merge, Squash & Merge       |
+| 5   |  Merge, Squash        |
+| 6   |  Pull Request       |
 
  
  ---
