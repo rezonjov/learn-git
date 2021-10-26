@@ -45,3 +45,22 @@ $ git config pull.ff only
 $ git config --global pull.ff only
 ```
  
+
+### Optional: Install bash completion
+```bash
+$ #ubuntu
+$ sudo apt install bash-completion
+
+
+$ #mac
+$ brew install bash-completion
+$ echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.bash_profile
+$ source ~/.bash_profile ## or ~/.zsh_profile
+
+
+$ #windows
+$ mkdir ~/bash_completion.d   
+$ curl -o ~/bash_completion.d/git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+$ echo "source ~/bash_completion.d/git" >> ~/.bashrc
+```
+
