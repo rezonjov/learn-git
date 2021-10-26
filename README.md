@@ -13,7 +13,7 @@
 | 1      | Git Setup      |
 | 2   |  Basic git workflow        |
 | 3   |  Commit      |
-| 4   |  Branch & Remote       |
+| 4   |  Branching       |
 | 4   |  Merge, Squash & Merge       |
 
  
