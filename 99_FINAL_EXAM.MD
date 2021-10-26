@@ -17,3 +17,6 @@ We really appreciate if you could spend 1 min of your time to fill in the follow
 | 6. | What workshop modules or exercises were most valuable/applicable to your work? | ... |
 | 7. | What suggestions do you have to strengthen the workshop? | ... |
 
+
+OR Please visit the following link:
+https://www.surveys.online/jfe/form/SV_0vnHlyk4AQhrWHc
