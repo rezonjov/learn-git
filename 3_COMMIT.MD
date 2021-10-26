@@ -7,9 +7,10 @@
                                                                                                                                     
  
 ### git status & tracking files 
-```bash
-$ #on the same folder
+```bash 
 $ cd workfolder
+$ mkdir <NAME>
+$ cd <NAME>
 $ touch <NAME>.MD
 
 $ # let's see the status after we create new file
@@ -29,17 +30,6 @@ $ # let's see the status again
 $ git status
 ```
  
-### git reset  
-
-```bash 
-$ # to reset all staged files
-$ git reset 
-
-$ # reset specific files
-$ git reset 1_GIT_SETUP.MD  
- 
-```
- 
 ### git commit  
 
 ```bash  
@@ -51,24 +41,31 @@ $ git commit -m "chore: message here"
 $ # let's see the log 
 $ git log
 ```
- 
+
 ### commit ammend  
 ```bash 
 $ # let's say you have committed but you forgot something, you can use --amend
 
-$ touch TEST_AMEND.MD
-$ git add TEST_AMEND.MD
-$ git commit -m "
+$ touch ANOTHER_FILE.MD
+$ git commit --amend # only works if you haven't pushed
 
-$ # retrieve files from stash
-$ git stash pop
+## if you have pushed, don't do --amend
+``` 
 
-$ # list stash 
-$ git stash list
-$ git stash show ## more detailed
+
+### git reset  
+```bash 
+$ # to reset all staged files
+$ git reset 
+
+$ # reset specific files
+$ git reset 1_GIT_SETUP.MD  
+
+$ # reset hard BECAREFUL
+$ git reset --hard
+$ git reset --hard origin/master
  
 ```
-
 
 ### git stash  
 ```bash 
@@ -89,10 +86,10 @@ $ git stash show ## more detailed
 
 ```bash  
 $ vim README.MD
+$ vim 1_GIT_SETUP.MD
 
 $ # view overall difference
-$ git diff README.MD
-
+$ git diff 
 
 $ # view specific file difference`
 $ git diff README.MD

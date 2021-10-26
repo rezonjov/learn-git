@@ -56,16 +56,7 @@ $ git pull <remote>
 $ # pull from specific remote branch 
 $ git pull <remote> <branch>
 
-Try-me: 
+$ # Try-me: 
 $ git checkout main
-$ git pull origin final 
-$ # what happens?
-```
-
-### git branching
-```bash
-$ cd ..
-$ git clone https://github.com/rezonjov/learn-git
-$ code learn-git  # or open via VS Code manually
-```
-
+$ git pull origin final  # what happens? 
+``` 

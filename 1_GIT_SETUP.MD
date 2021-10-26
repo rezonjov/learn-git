@@ -9,7 +9,7 @@
 
 
 ### set your identity
-```bash
+```bash 
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
@@ -67,7 +67,7 @@ $ source ~/.bash_profile ## or ~/.zsh_profile
 
 
 $ #windows
-$ mkdir ~/bash_completion.d   
+$ mkdir ~/bash_completion.d    
 $ curl -o ~/bash_completion.d/git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 $ echo "source ~/bash_completion.d/git" >> ~/.bashrc
 ```
