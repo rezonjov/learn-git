@@ -1,6 +1,10 @@
-# GIT BASIC
-
-
+     ██████╗ ██╗████████╗    ██████╗  █████╗ ███████╗██╗ ██████╗
+    ██╔════╝ ██║╚══██╔══╝    ██╔══██╗██╔══██╗██╔════╝██║██╔════╝
+    ██║  ███╗██║   ██║       ██████╔╝███████║███████╗██║██║     
+    ██║   ██║██║   ██║       ██╔══██╗██╔══██║╚════██║██║██║     
+    ╚██████╔╝██║   ██║       ██████╔╝██║  ██║███████║██║╚██████╗
+     ╚═════╝ ╚═╝   ╚═╝       ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝
+                                                            
 
 ### git init
 ```bash
@@ -10,40 +14,58 @@ $ cd learn-git-local
 $ git init
 $ ls -la
 ```
- 
+
 ### clone existing repository
 ```bash
 $ cd ..
 $ git clone https://github.com/rezonjov/learn-git
 $ code learn-git  # or open via VS Code manually
 ```
-  
-### git status & tracking files 
+
+### git log 
+```bash  
+$ git log 
+
+$ # view log branch the PRETTY WAY
+$ git log --all --graph --decorate --oneline
+
+$ # or you can add to your bash profile 
+$ echo "alias gitlog='git log --all --graph --decorate --oneline'" >> ~/.bash_profile
+```
+
+### remote
 ```bash
-$ #on the same folder
-$ cd workfolder
-$ touch <NAME>.MD
+# list git remote
+$ git remote -v
 
-$ # let's see the status after we create new file
-$ git status 
-
-$ # let's track the file
-$ git add <NAME>.MD
-
-$ # let's check status
-$ git status
-
-$ # let's change file
-$ vim <NAME>.MD
-
-$ # let's see the status again
-$ git status
+# add remote repository
+$ git remote add <name> <url>
+$ git remote -v
+ 
+# delete remote repository
+$ git remote remove <name>
 ```
- 
-### clear & reset
 
-```bash 
-$ git reset 
- 
+### pull
+```bash
+$ git pull
+
+$ # pull from specific remote 
+$ git pull <remote> 
+
+$ # pull from specific remote branch 
+$ git pull <remote> <branch>
+
+Try-me: 
+$ git checkout main
+$ git pull origin final 
+$ # what happens?
 ```
- 
+
+### git branching
+```bash
+$ cd ..
+$ git clone https://github.com/rezonjov/learn-git
+$ code learn-git  # or open via VS Code manually
+```
+
