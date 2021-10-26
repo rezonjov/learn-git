@@ -58,8 +58,12 @@ $ git rebase -i <COMMIT_REF>
 
 # Option 2 - use Reset Soft
 
-$ git reset --soft HEAD~X
+$ git reset --soft HEAD~X # X is the number of commits you'd like to squash
+
+# we then add all the files
 $ git add .
+
+# and create a new commit
 $ git commit -m "combine: message commit"
-$ git push +main
+$ git push origin +squash
 ```

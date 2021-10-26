@@ -44,11 +44,15 @@ $ git remote -v
  
 # delete remote repository
 $ git remote remove <name>
+
+# update repo from all remote update
+$ git remote update
 ```
 
 ### pull
 ```bash
-$ git pull
+$ git fetch # updates remote files
+$ git pull # update remote files and do merge
 
 $ # pull from specific remote 
 $ git pull <remote> 
