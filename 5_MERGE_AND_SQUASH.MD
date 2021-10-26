@@ -41,3 +41,25 @@ $ git fetch origin main
 $ # then let's merge
 $ git rebase main 
 ```
+
+
+
+## git squash all into 1 commit
+```bash
+$ # let's say we want to squash all commit into one. There are 2 options
+
+# Option 1 - use Rebase
+$ git rebase -i HEAD~X
+$ # OR
+$ git rebase -i <COMMIT_REF>
+
+
+---
+
+# Option 2 - use Reset Soft
+
+$ git reset --soft HEAD~X
+$ git add .
+$ git commit -m "combine: message commit"
+$ git push +main
+```
