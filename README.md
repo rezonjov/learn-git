@@ -5,7 +5,7 @@
     ██║     ██╔══╝  ██╔══██║██╔══██╗██║╚██╗██║    ██║   ██║██║   ██║   
     ███████╗███████╗██║  ██║██║  ██║██║ ╚████║    ╚██████╔╝██║   ██║   
     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝     ╚═════╝ ╚═╝   ╚═╝   
-    FROM BEGINNER TO MASTER   
+    FROM BEGINNER TO GIT MASTER   
 
 ## Learning Module 
 | No      | Git Module |
@@ -23,4 +23,4 @@
 2. https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
 3. https://docs.github.com/en/get-started/quickstart/set-up-git
 
- 
+

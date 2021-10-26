@@ -40,8 +40,37 @@ $ git reset 1_GIT_SETUP.MD
  
 ```
  
-### git stash  
+### git commit  
 
+```bash  
+$ git add .
+
+$ # let's commit those files
+$ git commit -m "chore: message here"
+
+$ # let's see the log 
+$ git log
+```
+ 
+### commit ammend  
+```bash 
+$ # let's say you have committed but you forgot something, you can use --amend
+
+$ touch TEST_AMEND.MD
+$ git add TEST_AMEND.MD
+$ git commit -m "
+
+$ # retrieve files from stash
+$ git stash pop
+
+$ # list stash 
+$ git stash list
+$ git stash show ## more detailed
+ 
+```
+
+
+### git stash  
 ```bash 
 $ # stash files to temporary location
 $ git stash 
@@ -60,18 +89,11 @@ $ git stash show ## more detailed
 
 ```bash  
 $ vim README.MD
+
+$ # view overall difference
 $ git diff README.MD
-```
- 
 
-### git log 
-```bash  
-$ git log 
 
-$ # view log branch the PRETTY WAY
-$ git log --all --graph --decorate --oneline
-
-$ # or you can add to your bash profile 
-$ echo "alias gitlog='git log --all --graph --decorate --oneline'" >> ~/.bash_profile
- 
+$ # view specific file difference`
+$ git diff README.MD
 ```
