@@ -21,7 +21,9 @@ $ git branch -v
 
 ### rename a branch
 ```bash
-$ git branch -m newnamehere
+$ git branch -m newnamehere\
+
+## try to pull and see the error
 ```
 
 
@@ -29,7 +31,16 @@ $ git branch -m newnamehere
 ```bash
 $ git checkout main
 
+<<<<<<< Updated upstream
 $ # delete `branch-name`
 $ git branch -D branch-name
+=======
+$ # delete local `branch-name` 
+$ git branch -D branch-name 
+
+
+$ # delete remote `branch-name` 
+$ git push origin --delete branch-name 
+>>>>>>> Stashed changes
 ```
 
