@@ -18,7 +18,7 @@ $ ls -la
 ### clone existing repository
 ```bash
 $ cd ..
-$ git clone https://github.com/rezonjov/learn-git
+$ git clone https://gitlab.pln.co.id/plnmobile/learn-git-main
 $ code learn-git  # or open via VS Code manually
 ```
 
